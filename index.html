@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>asad_sCousre</title>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/ad3d214d11.js" crossorigin="anonymous"></script>
   <!-- stykesheet  -->
   <link rel="stylesheet" href="css/style.css">
   <!-- Bootstrap -->
@@ -113,8 +115,7 @@
     <section>
       <div class=" d-flex flex-column align-items-center my-4">
         <h1 class="text-center">Discover Our Popular <br> Courses</h1>
-        <p class="text-center">It is a long established fact that a reader will be distracted by the readable <br>
-          content of a page whenlooking at its layout.</p>
+        <p class="text-center">Bootstrap includes HTML and CSS based design templates for typography,<br> forms, buttons, tables, navigation, modals, image carousels and many other</p>
       </div>
     </section>
     <!-- course details -->
@@ -239,9 +240,30 @@
             looking at its layout.</p>
         </div>
         <div>
-          <button type="button" class="btn bg-light text-primary btn-lg">Register Now</button>
+          <button type="button" class="btn bg-light text-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Register Now
+          </button>
         </div>
       </div>
+      <!-- modal start  -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal end  -->
     </section>
     <!-- successful -->
     <section>
@@ -301,72 +323,104 @@
       <div class="d-flex justify-content-center">
         <div class="text-center">
           <h1>Some Students Feedback</h1>
-          <p>uccessful organizations depend on feedback, whether it comes from customers,<br> the public, your own employees or for your events</p>
+          <p>uccessful organizations depend on feedback, whether it comes from customers,<br> the public, your own
+            employees or for your events</p>
         </div>
       </div>
-     
+
     </section>
-     <!-- FAQ  -->
-     <section>
+    <!-- FAQ  -->
+    <section>
       <div class="my-5">
         <div class="accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                 Differnce between flex & grid ?
               </button>
             </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same time.</div>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">flexbox was designed for layout in one dimension - either a row or a column.
+                Grid was designed for two-dimensional layout - rows, and columns at the same time.</div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                 What is css box-model?
               </button>
             </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">In CSS, the term "box model" is used when talking about design and layout. The CSS box model is essentially a box that wraps around every HTML element.</div>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">In CSS, the term "box model" is used when talking about design and layout. The
+                CSS box model is essentially a box that wraps around every HTML element.</div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                 What is semantic tag?
               </button>
             </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">The HTML semantics refers to the tags that provide meaning to an HTML page rather than just presentation. It makes HTML more comprehensible by better defining the different sections and layout of web pages.</div>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">The HTML semantics refers to the tags that provide meaning to an HTML page
+                rather than just presentation. It makes HTML more comprehensible by better defining the different
+                sections and layout of web pages.</div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                 What is bootstrap & tailwind css?
               </button>
             </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">In CSS, the term "box model" is used when talking about design and layout. The CSS box model is essentially a box that wraps around every HTML element.</div>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">In CSS, the term "box model" is used when talking about design and layout. The
+                CSS box model is essentially a box that wraps around every HTML element.</div>
             </div>
           </div>
         </div>
       </div>
-     </section>
-     <!-- Trusted over -->
-     <section>
-     <div class="show">
-      <div class="d-flex justify-content-center"><h1>Trusted by over 800+ companies</h1></div>
-      <div class="my-5 d-flex justify-content-lg-evenly">
-        <img class="img-fluid" src="images/company/company-1.png" alt="">
-        <img class="img-fluid" src="images/company/company-2.png" alt="">
-        <img class="img-fluid" src="images/company/company-3.png" alt="">
-        <img class="img-fluid" src="images/company/company-4.png" alt="">
-        <img class="img-fluid" src="images/company/company-5.png" alt="">
+    </section>
+    <!-- Trusted over -->
+    <section>
+      <div class="show">
+        <div class="d-flex justify-content-center">
+          <h1>Trusted by over 800+ companies</h1>
+        </div>
+        <div class="my-5 d-flex justify-content-lg-evenly">
+          <img class="img-fluid" src="images/company/company-1.png" alt="">
+          <img class="img-fluid" src="images/company/company-2.png" alt="">
+          <img class="img-fluid" src="images/company/company-3.png" alt="">
+          <img class="img-fluid" src="images/company/company-4.png" alt="">
+          <img class="img-fluid" src="images/company/company-5.png" alt="">
+        </div>
       </div>
-     </div>
-     </section>
+    </section>
   </main>
+  <footer>
+    <div class="bg-dark p-5 mt-5  ">
+      <div class="text-center">
+        <h1>Courspro</h1>
+        <p><small>Office 41, Zawaya Buildin, Ghala Muscat,<br>
+            Sultanate of Oman</small></p>
+        <p><small>Privacy Ploicy | Terms of use</small></p>
+      </div>
+      <div class="text-center">
+        <a href="https://www.facebook.com/profile.php?id=100009161468900"> <i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/asad-rayat-6ab889223/"> <i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Asadrayat/"> <i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
