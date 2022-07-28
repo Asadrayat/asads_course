@@ -6,6 +6,13 @@
     .corse-text{
         grid-column: auto;
     }
+    .explore{
+        display: none;
+    }
+    .succeed1{
+        display: none;
+    }
+
 
 }
 @media only screen and (min-width:577px) and (max-width:767px) {
